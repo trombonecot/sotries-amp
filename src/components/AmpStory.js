@@ -1,20 +1,30 @@
 import React from 'react';
 import AmpStoryPage from './AmpStoryPage';
+import AmpStoryPageCover from './AmpStoryPageCover';
 
-function AmpStory() {
-  return (
-    <amp-story standalone
-        title="Joy of Pets"
-        publisher="AMP tutorials"
-        publisher-logo-src="assets/AMP-Brand-White-Icon.svg"
-        poster-portrait-src="assets/cover.jpg">
-       
-       <AmpStoryPage />
-       <AmpStoryPage />
-       <AmpStoryPage />
-    
-    </amp-story>
-  );
+class AmpStory extends React.Component {
+
+  createAmpStoryPages(files) {
+    return files.map(this.createAmpStoryPage);
+  }
+
+  createAmpStoryPage(file, index) {
+    return <AmpStoryPage key={file} file={file} index={index}/>;
+  }
+
+  render() {
+    return (
+      <amp-story standalone
+                publisher-logo-src="logo512.png"
+                poster-portrait-src="assets/cover.jpg">
+                  
+        <AmpStoryPageCover />
+
+        {this.createAmpStoryPages(this.props.files)}
+
+      </amp-story>
+    );
+  }
 }
 
 export default AmpStory;
