@@ -8,8 +8,8 @@ class AmpStoryPage extends React.Component {
       videoId = `video${storyId}`;
 
     return (
-      <amp-story-page id={storyId}>
-          <amp-story-grid-layer template="fill" auto-advance-after={videoId} >
+      <amp-story-page id={storyId}  auto-advance-after={videoId}>
+          <amp-story-grid-layer template="fill" >
             <amp-video id={videoId}  autoplay
                     width="720" height="1280"
                     poster="assets/rabbit.jpg"

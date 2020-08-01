@@ -13,7 +13,7 @@ class AmpStoryPage extends React.Component {
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical">
           <h1>Mataró</h1>
-          <p>By Coses</p>
+          <p>By animal religion</p>
         </amp-story-grid-layer>
       </amp-story-page>
     );
