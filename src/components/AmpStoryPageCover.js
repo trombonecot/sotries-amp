@@ -6,7 +6,7 @@ class AmpStoryPage extends React.Component {
     return (
       <amp-story-page id="cover" auto-advance-after="5s">
         <amp-story-grid-layer template="fill">
-          <amp-img src="content/cover.jpg"
+          <amp-img src="content/cuc.jpg"
               width="720" height="1280"
               layout="responsive">
           </amp-img>
