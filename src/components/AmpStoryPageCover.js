@@ -12,8 +12,8 @@ class AmpStoryPage extends React.Component {
           </amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical">
-          <h1>El més petit de tots</h1>
-          <p>CUC</p>
+          <h1>CUC</h1>
+          <p>El més petit de tots</p>
         </amp-story-grid-layer>
       </amp-story-page>
     );
